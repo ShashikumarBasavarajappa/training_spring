@@ -1,0 +1,22 @@
+package beans;
+
+public class Test {
+
+	private String[] canames;
+	private Engine[] enigine;
+	
+	public String[] getCanames() {
+		return canames;
+	}
+	public void setCanames(String[] canames) {
+		this.canames = canames;
+	}
+	public Engine[] getEnigine() {
+		return enigine;
+	}
+	public void setEnigine(Engine[] enigine) {
+		this.enigine = enigine;
+	}
+	
+	
+}

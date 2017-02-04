@@ -1,0 +1,15 @@
+package beans;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Test {
+
+	private List fruits;
+	private Set crickets;
+	private Map cc;
+	
+	
+	
+}

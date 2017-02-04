@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ <beans>
+ 	<bean id="e1" class="beans.Engine">
+ 		<property name="modelyear" value="2017"></property>
+ 	</bean>
+ 	 <bean id="e2" class="beans.Engine">
+ 		<property name="modelyear" value="2016"></property>
+ 	</bean>
+ 	 <bean id="e3" class="beans.Engine">
+ 		<property name="modelyear" value="2015"></property>
+ 	</bean>
+	<bean class="beans.Car" id="c">
+		<property name="carnames">
+			<list>
+				<value>AUDI</value>
+				<value>BMW</value>
+			</list>
+		</property>
+		<property name="engines">
+			<list>
+				<ref bean="e1"/>
+				<ref bean="e2"/>
+				<ref bean="e3"/>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
